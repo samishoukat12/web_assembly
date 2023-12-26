@@ -1,5 +1,5 @@
 // The entry file of your WebAssembly module.
+import { multiple } from "./operation/multiply";
 
-export function add(a: i32, b: i32): i32 {
-  return a + b;
-}
+import { add } from "./operation/add";
+export { multiple, add };
